@@ -1,7 +1,5 @@
-# portfolio-website-inwork
+# My Portfolio
 My portfolio website, it is in work, so don't expect too much.
-
-# Spotify Main Page Clone
 
 ## 👀 Preview
 
