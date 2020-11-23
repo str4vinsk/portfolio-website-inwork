@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Vitor Conroy">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/recentwork.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <title>Vitor Conroy | Hacker & Front-end Developer</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="container">
+                <div class="nav-bar-title">
+                    <h1>🚀 VITOR CONROY</h1>
+                </div>
+                <div id="expand_icon" class="menu-container" onclick="activate()" data-target="#phone-nav">
+                    <div class="menu-btn-burger"></div>
+                </div>
+                <div class="nav-bar-interaction">
+                    <a href="#whoami-target" class="about-btn">About</a>
+                    <a href="#recent-target" class="about-btn">Works</a>
+                    <a href="#contact-target" class="about-btn">Contact</a>
+                </div>
+            </div>
+            <div id="phone-nav">
+                <div class="nav-phone-menu">
+                    <div class="nav-bar-interaction-phone">
+                        <a href="#whoami-target" class="about-btn">About</a>
+                        <a href="#recent-target" class="about-btn">Works</a>
+                        <a href="#contact-target" class="about-btn">Contact</a>
+                        <ul class="social-content">
+                            <li class="liitem"><img class="socialimg" src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202090instagramlogosocialsocialmedia-115598_115703.png"></li>
+                            <li class="liitem"><img class="socialimg" src="https://rmutrecht.org/wp-content/uploads/sites/259/2017/07/logo-twitter.png"></li>
+                            <li class="liitem"><img class="socialimg" src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2020/04/youtube.png?fit=512%2C512&ssl=1"></li>
+                            <li class="liitem"><img class="socialimg" src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-512.png"></li>
+                            <li class="liitem"><img class="socialimg" src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202090instagramlogosocialsocialmedia-115598_115703.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <hr />
+        <div class="container">
+            <section class="quick-aboutme">
+                <div class="container">
+                    <div class="titles-container">
+                        <h2>
+                            <span>
+                                <span class="letter ethical">E</span>
+                                <span class="letter ethical">t</span>
+                                <span class="letter ethical">h</span>
+                                <span class="letter ethical">i</span>
+                                <span class="letter ethical">c</span>
+                                <span class="letter ethical">a</span>
+                                <span class="letter ethical">l</span>
+                                <span>&nbsp</span>
+                                <span class="letter ethical">H</span>
+                                <span class="letter ethical">a</span>
+                                <span class="letter ethical">c</span>
+                                <span class="letter ethical">k</span>
+                                <span class="letter ethical">e</span>
+                                <span class="letter ethical">r</span>        
+                                <span>&nbsp</span>
+                                <span class="letter">&</span>
+                                <span>&nbsp</span>
+                                <span class="letter">F</span>
+                                <span class="letter">r</span>
+                                <span class="letter">o</span>
+                                <span class="letter">n</span>
+                                <span class="letter">t</span>
+                                <span class="letter">-</span>
+                                <span class="letter">e</span>
+                                <span class="letter">n</span>
+                                <span class="letter">d</span>
+                                <span>&nbsp</span>
+                                <span class="letter">D</span>
+                                <span class="letter">e</span>
+                                <span class="letter">v</span>
+                                <span class="letter">e</span>
+                                <span class="letter">l</span>
+                                <span class="letter">o</span>
+                                <span class="letter">p</span>
+                                <span class="letter">e</span>
+                                <span class="letter">r</span>
+                            </span>
+                        </h2>
+
+                        <h3>I love the art of hacking and the entire world sorround it!</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="history">
+                <div class="terminal-text">
+                    <div class="content">
+                        <h2>Oi 👋! Meu nome é Vitor. Prazer em te conhecer.</h2>
+                        
+
+                        <p>~$</p>
+                        <p class="text"> Sou apaixonado por tecnologia e quando eu digo isso, é pra valer mesmo.
+                        De todas as áreas do mundo da tecnologia a que mais sou apaixonado é o hacking
+                        por isso pretendo seguir carreira nesta área, entretanto, também sou fissurado por web development tanto Front-end quanto Back-end</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <section class="cards-container">
+        <div class="card-holder">
+            <div class="card" id="left-card">
+                <img class="cardimg" src="https://img.icons8.com/wired/64/000000/console.png"/>
+                <h3>Ethical Hacking</h3>
+                <p class="ptext">Eu gosto de desmontar e entender as coisas, e o hacking pra mim é justamente isso,
+                desmontar para descobrir suas falhas, e depois, corrigilas.
+                </p>
+                <br>
+                <p class="desc">O que eu posso fazer:</p>
+                <p class="ptext">Red team, Web Hacking, Análise forense & Pentesting</p>
+            </div>
+            <div class="card" id="right-card">
+                <img class="cardimg" src="https://img.icons8.com/wired/64/000000/design.png"/>
+                <h3>Front-end Developer</h3>
+                <p class="ptext">Além de desconstruir eu também amo construir tudo o que imagino e traze-los
+                a vida dentro do navegador.
+                </p>
+                <br>
+                <p class="desc">Linguagens que eu falo:</p>
+                <p class="ptext">HTML, CSS, Sass, Less, JavaScript, ReactJS</p>
+            </div>
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+        <path fill="#282C35" fill-opacity="1" d="M0,32L1440,224L1440,320L0,320Z"></path>
+      </svg>
+    <section class="works" id="recent-target">
+        <div class="about-text">TRABALHOS RECENTES</div>
+        <div class="about-border"></div>
+        <div class="recent-works">
+            <div class="react">
+                <div class="work-card" id="origincard">
+                </div>
+                <div class="work-content">
+                    <h3 class="work-title">Spotify UI Clone</h3>
+                    <p class="techs">HTML, CSS & Js</p>
+                    <input class="learn-btn" type="button" value="LEARN MORE" />
+                </div>
+            </div>
+            <div class="react">
+                <div class="work-card" id="card1">
+                </div>
+                <div class="work-content">
+                    <h3 class="work-title">Spotify UI Clone</h3>
+                    <p class="techs">HTML, CSS & Js</p>
+                    <input class="learn-btn" type="button" value="LEARN MORE" />
+                </div>
+            </div>
+            <div class="react">
+                <div class="work-card" id="card2">
+                </div>
+                <div class="work-content">
+                    <h3 class="work-title">Spotify UI Clone</h3>
+                    <p class="techs">HTML, CSS & Js</p>
+                    <input class="learn-btn" type="button" value="LEARN MORE" />
+                </div>
+            </div>
+            <div class="react">
+                <div class="work-card" id="card3">
+                </div>
+                <div class="work-content">
+                    <h3 class="work-title">Spotify UI Clone</h3>
+                    <p class="techs">HTML, CSS & Js</p>
+                    <input class="learn-btn" type="button" value="LEARN MORE" />
+                </div>
+            </div>
+            <div class="react">
+                <div class="work-card" id="card4">
+                </div>
+                <div class="work-content">
+                    <h3 class="work-title">Spotify UI Clone</h3>
+                    <p class="techs">HTML, CSS & Js</p>
+                    <input class="learn-btn" type="button" value="LEARN MORE" />
+                </div>
+            </div>
+            <div class="react">
+                <div class="work-card" id="card5">
+                </div>
+                <div class="work-content">
+                    <h3 class="work-title">Spotify UI Clone</h3>
+                    <p class="techs">HTML, CSS & Js</p>
+                    <input class="learn-btn" type="button" value="LEARN MORE" />
+                </div>
+            </div>
+           
+           
+        </div>
+    </section>
+    <hr class="divide" />
+    <section class="whoami">
+        <div class="container">
+            <div class="about-text">SOBRE</div>
+            <div class="about-border"></div>
+            <div class="aboutme-section"  id="whoami-target">
+                <div class="main">
+                    <div class="personalinfos">
+                        <img class="myphoto" src="https://i.imgur.com/Sg1m3i8.png">
+                        <div class="infos">
+                            <h2>~$ Who am i ?</h2>
+                            <p>Age: 16</p>
+                            <p>Name: Vitor Conroy</p>
+                            <p class="description">Oi! Meu nome é Vitor, sou um cara fascinado pela tecnologia e com vontade de expandi-la cada vez mais
+                                começei nesta área estudando python, logo depois, passei para desenvolvimento web e finalmente, descobri minha maior
+                                paixão, o hacking! Desde então, foco completamente em melhorar minhas habilidades e aprender continuamente a respeito
+                                das mais variadas tecnologias.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div id="hacking-skills" class="main-holder">
+                            <h2>Hacking</h2>
+                            <div class="skill-container">
+                                <div class="skill-card">
+                                    <div class="skill-holder">
+                                        <img class="skillimg" src="https://img.icons8.com/dotty/80/000000/security-checked.png"/>
+                                    </div>
+                                    <h3>Segurança</h3>
+                                    <p>Eu vou manter você e sua empresa em segurança!</p>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-holder">
+                                        <img class="skillimg" src="https://img.icons8.com/ios/50/000000/cloud-vulnerability.png"/>
+                                    </div>
+                                    <h3>Full Testing</h3>
+                                    <p>Não importa o tamanho, eu testo desde pessoas únicas até grandes empresas.</p>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-holder">
+                                        <img class="skillimg" src="https://img.icons8.com/ios/100/000000/macbook-money--v2.png"/>
+                                    </div>
+                                    <h3>Bom preço</h3>
+                                    <p>Eu sempre vou tentar fazer o melhor preço para o meu trabalho.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dev-skills" class="main-holder">
+                            <h2>Front-end</h2>
+                            <div class="skill-container">
+                                <div class="skill-card">
+                                    <div class="skill-holder">
+                                        <img class="skillimg" src="https://image.flaticon.com/icons/png/512/82/82155.png">
+                                    </div>
+                                    <h3>Responsivo</h3>
+                                    <p>Meus layouts vão funcionar em qualquer dispositivo, seja grande ou pequeno.</p>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-holder">
+                                        <img class="skillimg" src="https://img.icons8.com/ios/50/000000/move.png"/>
+                                    </div>
+                                    <h3>Dinâmico</h3>
+                                    <p>Meus sites jamais serão estáticos, movimento é melhor!</p>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-holder">
+                                        <img class="skillimg" src="https://img.icons8.com/windows/32/000000/performance-2.png"/>
+                                    </div>
+                                    <h3>Performance</h3>
+                                    <p>Meus sites serão rápidos e inteligentes!</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill=" #141C3A" fill-opacity="1" d="M0,160L720,256L1440,160L1440,320L720,320L0,320Z"></path></svg>
+    <footer class="contact" id="contact-target">
+       
+        <div class="about-text">CONTATO</div>
+        <div class="about-border"></div>
+        <h4 class="contact-desc">Tem alguma pergunta ou quer trabalhar junto ? Me contacte!</h4>
+        <div class="main">
+            <div class="form">
+                <input placeholder="Seu nome..." type="text" class="form-item" id="name" />
+                <input placeholder="Seu email..." type="email" class="form-item" id="email" />
+                <textarea placeholder="Tem alguma pergunta ou deseja trabalhar comigo ?" type="text" class="form-item" id="msg"></textarea>
+                <input class="form-btn" type="button" value="SUBMIT" />
+            </div>
+        </div>
+        <div class="area">
+            <div class="foot-social">
+                <a class="social-foot"><img class="social-links" src="https://i.imgur.com/hf2fkC2.png"></a>
+                <a class="social-foot"><img class="social-links" src="https://i.imgur.com/99S8rYf.png"></a>
+                <a class="social-foot"><img class="social-links" src="https://i.imgur.com/PPv4DiT.png"></a>
+                <a class="social-foot"><img class="social-links" src="https://i.imgur.com/Xn91zcT.png"></a>
+            </div>
+            <span class="me">VITOR CONROY <span class="twe">@2020</span></span>
+        </div>
+    </footer>
+    <script>
+        ScrollReveal({reset: false, delay: 500, origin: 'left', distance: '30px'})
+        ScrollReveal().reveal('.personalinfos');
+        ScrollReveal().reveal('.about-text');
+        ScrollReveal().reveal('.about-border');
+        ScrollReveal().reveal('.skills', {delay: 600, origin: 'right'});
+        ScrollReveal().reveal('#left-card', {delay: 200, origin: 'left'});
+        ScrollReveal().reveal('#right-card', {delay: 200, origin: 'right'});
+        ScrollReveal().reveal('.contact-desc', {delay: 200, origin: 'right'});
+        ScrollReveal().reveal('.form', {distance: 0, scale: 0.1, delay: 300});
+        ScrollReveal().reveal('.recent-works', {distance: 0, scale: 0.1, delay: 200})
+
+        function activate() {
+            $(".menu-container").toggleClass("is-active"), $("#phone-nav").toggleClass("is-active");
+        }
+        function showsocial() {
+            $(".social-content").toggleClass("is-active"), $("#social-btn").toggleClass("is-active");
+            $(".liitem").css("-webkit-animation-play-state", "running");
+        }
+        function showsocialdrop() {
+            $(".social-content-drop").toggleClass("is-active"), $("#social-btn-drop").toggleClass("is-active");
+        }
+
+        
+    </script>
+</body>
+</html>
