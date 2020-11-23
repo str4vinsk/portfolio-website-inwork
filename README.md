@@ -3,6 +3,15 @@ My portfolio website, it is in work, so don't expect too much.
 
 # Spotify Main Page Clone
 
+## 👀 Preview
+
+You can see the site preview on github pages!
+
+
+ - https://str4vinsk.github.io/portfolio-website-inwork/
+
+---
+
 ## 💾 Installing 
 
 Git clone the repository
