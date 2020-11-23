@@ -1,4 +1,4 @@
-# portfolio-websIte-inwork
+# portfolio-website-inwork
 My portfolio website, it is in work, so don't expect too much.
 
 # Spotify Main Page Clone
@@ -8,7 +8,7 @@ My portfolio website, it is in work, so don't expect too much.
 Git clone the repository
 
 ```
-git clone https://github.com/str4vinsk/portfolio-websIte-inwork
+git clone https://github.com/str4vinsk/portfolio-website-inwork
 ```
 
 Open the index.html file on your browser
