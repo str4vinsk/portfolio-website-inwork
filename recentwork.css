@@ -1,0 +1,116 @@
+.works
+{
+    background-color: #282C35;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.works .about-border
+{
+    width: 150px;
+    background-color: white;
+}
+.recent-works
+{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px;
+    padding-bottom: 150px;
+}
+.work-card
+{
+    background-position: center;
+    background-size: cover;
+    opacity: 100;
+    width: 350px;
+    height: 300px;
+    max-width: 100%;
+    -webkit-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+.react
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 300px;
+    max-width: 100%;
+    -webkit-transition: background 5s ease-out;
+    transition: background 5s ease-out;
+    transition: 3s;
+}
+#workcard
+{
+    display: none;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5c5c3833840b161566b02a76/1573133725500-Y5PCN0V04I86HDAT8AT0/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/WBC_7095.jpg?format=2500w');
+}
+
+.techs
+{
+    color: #E5B622;
+}
+.work-title
+{
+    font-weight: 500;
+}
+.learn-btn
+{
+    width: 140px;
+    padding: 10px;
+    text-decoration: none;
+    border: solid 3px #E5B622;
+    color: #E5B622;
+    font-weight: 500;
+    font-size: 12pt;
+    outline: none;
+    background-color: transparent;
+    margin-top: 40px;
+    transition: 0.25s;
+}
+.learn-btn:hover
+{
+    background-color: #E5B622;
+    color: black;
+}
+.react:hover .work-card
+{
+    opacity: 0;
+}
+.work-content
+{
+    padding-top: 80px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+}
+.react:hover .work-content
+{
+    display: block;
+    opacity: 100;
+}
+
+@media (max-width: 532px)
+{
+    .recent-works
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    h1 {
+        font-size: 12pt;
+    }
+}
