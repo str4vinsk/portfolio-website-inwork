@@ -144,62 +144,15 @@
         <div class="about-text">TRABALHOS RECENTES</div>
         <div class="about-border"></div>
         <div class="recent-works">
-            <div class="react">
-                <div class="work-card" id="origincard">
+            <div class="react" id="workcard">
+                <div class="work-card">
                 </div>
                 <div class="work-content">
                     <h3 class="work-title">Spotify UI Clone</h3>
                     <p class="techs">HTML, CSS & Js</p>
-                    <input class="learn-btn" type="button" value="LEARN MORE" />
+                    <a class="location" href=""><input class="learn-btn" type="button" value="SAIBA MAIS" /></a>
                 </div>
             </div>
-            <div class="react">
-                <div class="work-card" id="card1">
-                </div>
-                <div class="work-content">
-                    <h3 class="work-title">Spotify UI Clone</h3>
-                    <p class="techs">HTML, CSS & Js</p>
-                    <input class="learn-btn" type="button" value="LEARN MORE" />
-                </div>
-            </div>
-            <div class="react">
-                <div class="work-card" id="card2">
-                </div>
-                <div class="work-content">
-                    <h3 class="work-title">Spotify UI Clone</h3>
-                    <p class="techs">HTML, CSS & Js</p>
-                    <input class="learn-btn" type="button" value="LEARN MORE" />
-                </div>
-            </div>
-            <div class="react">
-                <div class="work-card" id="card3">
-                </div>
-                <div class="work-content">
-                    <h3 class="work-title">Spotify UI Clone</h3>
-                    <p class="techs">HTML, CSS & Js</p>
-                    <input class="learn-btn" type="button" value="LEARN MORE" />
-                </div>
-            </div>
-            <div class="react">
-                <div class="work-card" id="card4">
-                </div>
-                <div class="work-content">
-                    <h3 class="work-title">Spotify UI Clone</h3>
-                    <p class="techs">HTML, CSS & Js</p>
-                    <input class="learn-btn" type="button" value="LEARN MORE" />
-                </div>
-            </div>
-            <div class="react">
-                <div class="work-card" id="card5">
-                </div>
-                <div class="work-content">
-                    <h3 class="work-title">Spotify UI Clone</h3>
-                    <p class="techs">HTML, CSS & Js</p>
-                    <input class="learn-btn" type="button" value="LEARN MORE" />
-                </div>
-            </div>
-           
-           
         </div>
     </section>
     <hr class="divide" />
@@ -297,38 +250,85 @@
         </div>
         <div class="area">
             <div class="foot-social">
-                <a class="social-foot"><img class="social-links" src="https://i.imgur.com/hf2fkC2.png"></a>
-                <a class="social-foot"><img class="social-links" src="https://i.imgur.com/99S8rYf.png"></a>
-                <a class="social-foot"><img class="social-links" src="https://i.imgur.com/PPv4DiT.png"></a>
-                <a class="social-foot"><img class="social-links" src="https://i.imgur.com/Xn91zcT.png"></a>
+                <a class="social-foot" href="https://www.instagram.com/vitorconroy/"><img class="social-links" src="https://i.imgur.com/hf2fkC2.png"></a>
+                <a class="social-foot" href="https://www.youtube.com/channel/UC-7lbl0uTusOxLMAhnj79SQ?view_as=subscriber"><img class="social-links" src="https://i.imgur.com/99S8rYf.png"></a>
+                <a class="social-foot" href="https://twitter.com/conroyvitor"><img class="social-links" src="https://i.imgur.com/PPv4DiT.png"></a>
+                <a class="social-foot" href="https://github.com/str4vinsk"><img class="social-links" src="https://i.imgur.com/Xn91zcT.png"></a>
             </div>
             <span class="me">VITOR CONROY <span class="twe">@2020</span></span>
         </div>
     </footer>
     <script>
-        ScrollReveal({reset: false, delay: 500, origin: 'left', distance: '30px'})
-        ScrollReveal().reveal('.personalinfos');
-        ScrollReveal().reveal('.about-text');
-        ScrollReveal().reveal('.about-border');
-        ScrollReveal().reveal('.skills', {delay: 600, origin: 'right'});
-        ScrollReveal().reveal('#left-card', {delay: 200, origin: 'left'});
-        ScrollReveal().reveal('#right-card', {delay: 200, origin: 'right'});
-        ScrollReveal().reveal('.contact-desc', {delay: 200, origin: 'right'});
-        ScrollReveal().reveal('.form', {distance: 0, scale: 0.1, delay: 300});
-        ScrollReveal().reveal('.recent-works', {distance: 0, scale: 0.1, delay: 200})
+    // Usa a api do github para conseguir as informações a respeito dos meus repositórios mais recentes
+    $(".react").clone().appendTo(".recent-work");
+    $.ajax({
+        url: "https://api.github.com/users/str4vinsk/repos?per_page=8&page=1&sort=updated",
+        jsonp: true,
+        method: "GET",
+        dataType: "json",
+        success: function (res) {
+            for (var i in res) {
+                var div = document.querySelector(".react");
+                clone = div.cloneNode(true);
+                clone.id = "clone"
+                clone.querySelector(".work-title").innerHTML = res[i].name; // Crio um card de trabalho com as informações coletadas
+                clone.querySelector(".techs").innerHTML = res[i].language;
+                clone.querySelector(".work-card").style.backgroundImage = `url(https://raw.githubusercontent.com/str4vinsk/${
+                    res[i].name
+                }/master/Screenshot.png)`;
+                clone.querySelector(".location").setAttribute("href", res[i].html_url);
+                document.querySelector(".recent-works").appendChild(clone);
 
-        function activate() {
-            $(".menu-container").toggleClass("is-active"), $("#phone-nav").toggleClass("is-active");
+            }
         }
-        function showsocial() {
-            $(".social-content").toggleClass("is-active"), $("#social-btn").toggleClass("is-active");
-            $(".liitem").css("-webkit-animation-play-state", "running");
-        }
-        function showsocialdrop() {
-            $(".social-content-drop").toggleClass("is-active"), $("#social-btn-drop").toggleClass("is-active");
-        }
+    });
 
-        
+    // Animações
+    ScrollReveal({reset: false, delay: 500, origin: 'left', distance: '30px'})
+    ScrollReveal().reveal('.personalinfos');
+    ScrollReveal().reveal('.about-text');
+    ScrollReveal().reveal('.about-border');
+    ScrollReveal().reveal('.skills', {
+        delay: 600,
+        origin: 'right'
+    });
+    ScrollReveal().reveal('#left-card', {
+        delay: 200,
+        origin: 'left'
+    });
+    ScrollReveal().reveal('#right-card', {
+        delay: 200,
+        origin: 'right'
+    });
+    ScrollReveal().reveal('.contact-desc', {
+        delay: 200,
+        origin: 'right'
+    });
+    ScrollReveal().reveal('.form', {
+        distance: 0,
+        scale: 0.1,
+        delay: 300
+    });
+    ScrollReveal().reveal('.recent-works', {
+        distance: 0,
+        scale: 0.1,
+        delay: 200
+    })
+
+    function activate() {
+        $(".menu-container").toggleClass("is-active"),
+        $("#phone-nav").toggleClass("is-active");
+    }
+    function showsocial() {
+        $(".social-content").toggleClass("is-active"),
+        $("#social-btn").toggleClass("is-active");
+        $(".liitem").css("-webkit-animation-play-state", "running");
+    }
+    function showsocialdrop() {
+        $(".social-content-drop").toggleClass("is-active"),
+        $("#social-btn-drop").toggleClass("is-active");
+    }
+
     </script>
 </body>
 </html>
