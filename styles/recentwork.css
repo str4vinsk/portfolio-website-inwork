@@ -50,29 +50,10 @@
     transition: background 5s ease-out;
     transition: 3s;
 }
-#origincard
+#workcard
 {
+    display: none;
     background-image: url('https://images.squarespace-cdn.com/content/v1/5c5c3833840b161566b02a76/1573133725500-Y5PCN0V04I86HDAT8AT0/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/WBC_7095.jpg?format=2500w');
-}
-#card1
-{
-    background-image: url('PcPicture.png');
-}
-#card2
-{
-    background-image: url('https://i.ytimg.com/vi/TtvQxIJvUj8/maxresdefault.jpg');
-}
-#card3
-{
-    background-image: url('https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/08/28183850/home_post_2.gif');
-}
-#card4
-{
-    background-image: url('https://blog.travelpayouts.com/en/wp-content/uploads/sites/2/2019/07/website-builder.jpg');
-}
-#card5
-{
-    background-image: url('https://mobirise.com/sub-assets/images/blocks-preview-1.jpg');
 }
 
 .techs
@@ -87,6 +68,7 @@
 {
     width: 140px;
     padding: 10px;
+    text-decoration: none;
     border: solid 3px #E5B622;
     color: #E5B622;
     font-weight: 500;
@@ -126,5 +108,9 @@
     .recent-works
     {
         flex-direction: column;
+        width: 100%;
+    }
+    h1 {
+        font-size: 12pt;
     }
 }
