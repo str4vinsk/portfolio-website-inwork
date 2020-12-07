@@ -1,6 +1,12 @@
 # My Portfolio
 My portfolio website, it is in work, so don't expect too much.
 
+## Screenshots
+
+![Screenshot](./Screenshot.png)
+
+---
+
 ## 👀 Preview
 
 You can see the site preview on github pages!
