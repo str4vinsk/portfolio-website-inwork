@@ -4,8 +4,6 @@ My portfolio website, hope you like it :D
 ## Screenshots
 
 ![Screenshot](./Screenshot.png)
-![Screenshot](./Screenshot2.png)
-![Screenshot](./Mobile.png)
 
 ---
 
