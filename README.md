@@ -1,5 +1,5 @@
 # My Portfolio
-My portfolio website, it is in work, so don't expect too much.
+My portfolio website, hope you like it :D
 
 ## Screenshots
 
