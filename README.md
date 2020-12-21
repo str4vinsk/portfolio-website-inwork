@@ -14,7 +14,7 @@ My portfolio website, hope you like it :D
 You can see the site preview on github pages!
 
 
- - https://str4vinsk.github.io/portfolio-website-inwork/
+ - https://str4vinsk.github.io/vitor-conroy-portfolio/
 
 ---
 
