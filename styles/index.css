@@ -148,8 +148,7 @@ object {
   margin-top: 40px;
 }
 
-.more-of-me
-{
+.more-of-me {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,52 +156,43 @@ object {
   width: 100%;
   height: 700px;
 }
-.more-of-me iframe
-{
+.more-of-me iframe {
   margin: 60px;
 }
 
-.webdev-kit
-{
-  background-color: #282C35;
+.webdev-kit {
+  background-color: #282c35;
   padding-top: 150px;
   padding-bottom: 150px;
 }
 
-
-.webdev-kit .holder
-{
+.webdev-kit .holder {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
-.webdev-kit .holder h1
-{
+.webdev-kit .holder h1 {
   font-size: 30pt;
 }
 
-.common
-{
+.common {
   padding: 50px;
 }
 
-.scontent
-{
+.scontent {
   display: flex;
   flex-direction: column;
   max-width: 400px;
   margin: 26px;
 }
 
-.scontent h1
-{
+.scontent h1 {
   margin-bottom: 20px;
 }
 
-.scontent .about-border
-{
+.scontent .about-border {
   margin-bottom: 20px;
 }
 
@@ -261,17 +251,14 @@ object {
   .terminalsvg {
     width: 60%;
   }
-  .more-of-me iframe
-  {
+  .more-of-me iframe {
     width: 70%;
   }
-  .pic
-  {
+  .pic {
     width: 95%;
     margin: 50px;
   }
-  .webdev-kit .holder
-  {
+  .webdev-kit .holder {
     flex-direction: column;
   }
 }
