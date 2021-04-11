@@ -1,19 +1,6 @@
 # My Portfolio
 My portfolio website, hope you like it :D
 
-## Screenshots
-
-![Screenshot](./Screenshot.png)
-
----
-
-## 👀 Preview
-
-You can see the site preview on github pages!
-
-
- - https://str4vinsk.github.io/vitor-conroy-portfolio/
-
 ---
 
 ## 💾 Installing 
