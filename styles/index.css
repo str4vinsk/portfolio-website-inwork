@@ -137,6 +137,8 @@ object {
   max-width: 700px;
   line-height: 28px;
   text-align: start;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .history .terminal-text .content h2 {
   font-size: 54px;
