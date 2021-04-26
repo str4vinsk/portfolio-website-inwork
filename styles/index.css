@@ -129,7 +129,7 @@ object {
   justify-content: center;
   margin: 0 auto;
   padding-left: 60px;
-  padding-right: 20px;
+  padding-right: 60px;
 }
 .content {
   display: block;
@@ -255,10 +255,17 @@ object {
     width: 70%;
   }
   .pic {
+    display: none;
     width: 95%;
     margin: 50px;
   }
   .webdev-kit .holder {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 532px) {
+  .terminalsvg {
+    display: none;
   }
 }

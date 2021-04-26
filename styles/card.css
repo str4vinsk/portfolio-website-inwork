@@ -250,7 +250,7 @@
     align-items: center;
   }
   .infos h1 {
-    font-size: 15pt;
+    font-size: 30pt;
   }
   .skill-card {
     font-size: 9pt;
@@ -261,6 +261,6 @@
 }
 @media (max-width: 400px) {
   .card {
-    min-width: 200px;
+    min-width: 250px;
   }
 }

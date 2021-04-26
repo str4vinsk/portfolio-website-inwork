@@ -99,6 +99,10 @@
 }
 
 @media (max-width: 532px) {
+  .work-card {
+    width: 250px;
+    height: 200px;
+  }
   .recent-works {
     flex-direction: column;
     width: 100%;

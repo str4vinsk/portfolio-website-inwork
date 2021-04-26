@@ -111,6 +111,9 @@ svg {
 
 @media (max-width: 450px) {
   .form {
-    min-width: 100px;
+    min-width: 300px;
+  }
+  .social-foot {
+    border: none;
   }
 }
