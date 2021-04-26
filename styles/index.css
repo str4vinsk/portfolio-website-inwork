@@ -252,7 +252,7 @@ object {
     width: 60%;
   }
   .more-of-me iframe {
-    width: 70%;
+    width: 350px;
   }
   .pic {
     display: none;
